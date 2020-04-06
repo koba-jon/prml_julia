@@ -4,7 +4,7 @@ These are PRML sample programs written in Julia.
 ## Implementation
 
 ### Chapter 1: Introduction
-- [ ] Polynomial Curve Fitting.ipynb
+- [x] Polynomial Curve Fitting.ipynb
 
 ### Chapter 2: Probability Distributions
 
