@@ -1,4 +1,4 @@
-# PRML using Julia
+# PRML in Julia
 These are PRML sample programs written in Julia.
 
 ## Implementation
