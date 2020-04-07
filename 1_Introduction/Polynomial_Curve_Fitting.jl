@@ -11,10 +11,10 @@ base(x) = sin.(2pi*x)
 gen(x) = base(x) + rand(dist, length(x))
 
 # Set Function to Generate Polynomial Matrix
-function polynomial_matrix(x, n)
+function polynomial_matrix(x, N)
     m = length(x)
     X = fill(1.0, m)
-    for j in 1:n
+    for j in 1:N
         x_vec = x .^ j
         X = hcat(X, x_vec)
     end
@@ -22,9 +22,9 @@ function polynomial_matrix(x, n)
 end
 
 # Set Function to Calculate Coefficient
-function weight(x, y, n)
-    X = polynomial_matrix(x, n)
-    w = inv(X' * X) * X' * y
+function weight(x, y, N)
+    X = polynomial_matrix(x, N)
+    w = (X' * X) \ X' * y
     return w
 end
 
