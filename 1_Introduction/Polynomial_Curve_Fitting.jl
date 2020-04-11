@@ -2,7 +2,7 @@ using Distributions
 using Plots
 
 # Set Parameters
-M = 9  # total number of data
+M = 9  # total number of training data
 N = 9  # degree of a polynomial
 
 # Set Function to Generate Data
